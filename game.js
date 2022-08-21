@@ -17,7 +17,7 @@ $(".btn").on("click", function(){
 
 
 
-$(document).on("keypress", function(){
+$(document).on("input", function(){
     if(!firstKeyPress){
         nextSequence();
         firstKeyPress = true;
