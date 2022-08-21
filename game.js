@@ -24,6 +24,14 @@ $(document).on("keydown", function(){
     }
 });
 
+$(document).on("tap", function(){
+    if(!firstKeyPress){
+        nextSequence();
+        firstKeyPress = true;
+    }
+});
+
+
 
 function nextSequence(){
     userClickedPattern = [];
